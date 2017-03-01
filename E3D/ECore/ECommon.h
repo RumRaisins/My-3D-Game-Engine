@@ -22,7 +22,7 @@ namespace E3D {
 	typedef long       ELong;
 	typedef double     EDouble;
 	typedef std::string EString;
-	typedef std::wstring EWSrting;
+	typedef std::wstring EWString;
 
 	typedef unsigned char  EUChar;
 	typedef unsigned short EUShort;
