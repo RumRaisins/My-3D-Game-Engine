@@ -114,6 +114,7 @@
   <ItemGroup>
     <ClInclude Include="E3DHeader.h" />
     <ClInclude Include="ECommon.h" />
+    <ClInclude Include="EMath.h" />
     <ClInclude Include="EMatrix.h" />
     <ClInclude Include="EUtil.h" />
     <ClInclude Include="EVector.h" />
