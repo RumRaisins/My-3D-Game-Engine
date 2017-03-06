@@ -6,7 +6,7 @@
 
 namespace E3D {
 	//获取平移变换矩阵
-	void GetTranslateMatrixx44(EMatrix44 &mat, EFloat x, EFloat y, EFloat z) {
+	void GetTranslateMatrix44(EMatrix44 &mat, EFloat x, EFloat y, EFloat z) {
 		mat.m[0][0] = 1, mat.m[0][1] = 0, mat.m[0][2] = 0, mat.m[0][3] = 0;
 		mat.m[1][0] = 0, mat.m[1][1] = 1, mat.m[1][2] = 0, mat.m[1][3] = 0;
 		mat.m[2][0] = 0, mat.m[2][1] = 0, mat.m[2][2] = 1, mat.m[2][3] = 0;
@@ -73,8 +73,17 @@ namespace E3D {
 		EFloat z = vec.x*mat.m[0][2] + vec.y*mat.m[1][2] + vec.z*mat.m[2][2] + mat.m[3][2];
 		result.x = x, result.y = y; result.z = z;
 	}
+	void GetVertex4DMulMatrix44(const EVertex4D& vec, const EMatrix44 &mat, EVertex4D &result) {
+		EFloat x = vec.x*mat.m[0][0] + vec.y*mat.m[1][0] + vec.z*mat.m[2][0] + mat.m[3][0];
+		EFloat y = vec.x*mat.m[1][1] + vec.y*mat.m[1][1] + vec.z*mat.m[2][1] + mat.m[3][1];
+		EFloat z = vec.x*mat.m[0][2] + vec.y*mat.m[1][2] + vec.z*mat.m[2][2] + mat.m[3][2];
+		EFloat w = 1;
+		result.x = x, result.y = y; result.z = z, result.w = 1;
+
+	}
 
 	void GetVertex4DAddVector4D(const EVertex4D &v, const EVector4D& p, EVertex4D &result) {
+		 
 		//顶点变换
 		EFloat x = v.x + p.x;
 		EFloat y = v.y + p.y;

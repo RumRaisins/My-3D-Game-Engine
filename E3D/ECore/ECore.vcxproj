@@ -114,6 +114,7 @@
   <ItemGroup>
     <ClInclude Include="E3DHeader.h" />
     <ClInclude Include="ECommon.h" />
+    <ClInclude Include="ECore.h" />
     <ClInclude Include="EFrustum.h" />
     <ClInclude Include="EGraphics.h" />
     <ClInclude Include="ELight.h" />
@@ -124,6 +125,7 @@
     <ClInclude Include="EVector.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ECore.cpp" />
     <ClCompile Include="EFrustum.cpp" />
     <ClCompile Include="EGraphics.cpp" />
     <ClCompile Include="ELight.cpp" />

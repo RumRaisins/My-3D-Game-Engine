@@ -23,9 +23,9 @@ namespace E3D {
 	extern EMaterial *GetMaterial(const EString &name);
 	extern bool SetMaterial(const EString &name, EMaterial *material);
 	extern bool DestoryMaterial(const EString &name);
-	extern void DestoryALLMatreials();
+	extern void DestoryALLMaterials();
 
 	//解析材质脚本，读取基本材质和贴图
 	//材质脚本必须和模型名称相同 如ogreHead.mesh ogreHead.material
-	extern void ParseMareialScript(const EString &scriptName);
+	extern void ParseMaterialScript(const EString &scriptName);
 }

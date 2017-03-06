@@ -357,7 +357,6 @@ namespace E3D
 			y = right.y;
 			z = right.z;
 			w = right.w;
-
 			return *this;
 		}
 	};
