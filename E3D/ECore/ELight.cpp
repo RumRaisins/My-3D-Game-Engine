@@ -20,7 +20,7 @@ namespace E3D {
 	}
 	//获得一个灯光，如果灯光不存在，则创建一个新灯光并返回
 	ELight* GetLight(EInt id) {
-		if (GLights == NULL || (EInt)GLights->size > MAX_LIGHTS || id<0 || id>(EInt)GLights->size() - 1)
+		if (GLights == NULL || (EInt)GLights->size() > MAX_LIGHTS || id<0 || id>(EInt)GLights->size() - 1)
 			return NULL;
 		return GLights->at(id);
 	}
@@ -28,8 +28,8 @@ namespace E3D {
 	EInt GetLightSize() {
 		return GLights->size();
 	}
-	void DDestoryAllLights() {
-		for (LightItr itr = GLights->begin(); itr != GLights->end; itr++) {
+	void DestoryAllLights() {
+		for (LightItr itr = GLights->begin(); itr != GLights->end(); ++itr) {
 			SafeDelete((*itr));
 		}
 		GLights->clear();

@@ -45,6 +45,9 @@
     <ClInclude Include="EMaterial.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ECore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EMatrix.cpp">
@@ -66,6 +69,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="EMaterial.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ECore.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

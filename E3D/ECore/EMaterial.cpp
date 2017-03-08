@@ -9,7 +9,7 @@ namespace E3D {
 		SafeDelete(bitmap);
 	}
 
-	EColor EMaterial::gitPixel(EFloat u, EFloat v) {
+	EColor EMaterial::getPixel(EFloat u, EFloat v) {
 		static EColor defaultColor(255, 255, 255);
 		if (bitmap&&bitmap->isValid()) {
 			//这是一个更精确的方法，但是效率第一点
@@ -90,7 +90,7 @@ namespace E3D {
 									//环境光
 									std::size_t ambientIndex = info.find("ambient");
 									if (ambientIndex == 0) {
-										sscanf(info.c_str, "%s%f%f%f", temp, &material->ambient.r,
+										sscanf(info.c_str(), "%s%f%f%f", temp, &material->ambient.r,
 											&material->ambient.g,
 											&material->ambient.b);
 										continue;
@@ -105,7 +105,7 @@ namespace E3D {
 								//镜面反射
 									std::size_t specularIndex = info.find("specular");
 									if (specularIndex == 0) {
-										sscanf(info.c_str, "%s%f%f%f", temp, &material->specular.r,
+										sscanf(info.c_str(), "%s%f%f%f", temp, &material->specular.r,
 											&material->specular.g, &material->specular.b);
 										continue;
 									}

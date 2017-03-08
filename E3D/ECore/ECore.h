@@ -137,7 +137,7 @@ namespace E3D {
 		EVertex4DArry localList;              //物体变换前的物体局部坐标数组
 		EVertex4DArry transformList;          //物体变换后的坐标
 
-		EInt      polyonNumber;               //物体的所包换多边形的葛叔
+		EInt      polyonNumber;               //物体的所包换多边形的个数
 		EPolyon4DArray polyonList;            //存储多边形的数组
 
 		//这个变量是为了处理一个导入的mesh有多个submesh的情况来考虑的，如果有多个submesh的话 nextObject!=NULL
@@ -219,11 +219,11 @@ namespace E3D {
 
 	//渲染线框模型
 	void Draw_Object4D_Wire(EObject4D *obj);
-	void Draw_RenderList4D_Wire(ERenderList4D *renderList, EFrustum *camera);
+	void Draw_RenderList4D_Wire(ERenderList4D *renderList);
 
 	//渲染实体模型
 	void Draw_Object4D_Solid(EObject4D *obj);
-	void Draw_RenderList4d_Solid(ERenderList4D *renderList, EFrustum *camera);
+	void Draw_RenderList4D_Solid(ERenderList4D *renderList);
 
 	//渲染自带纹理的renderList
 	void Draw_RenderList4D_Teture_Solid(ERenderList4D *renderList);

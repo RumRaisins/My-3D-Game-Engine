@@ -14,7 +14,7 @@ namespace E3D {
 		EMaterial();
 		~EMaterial();
 		inline bool useTexture() { return bitmap&&bitmap->isValid(); }
-		EColor gitPixel(EFloat u, EFloat v);
+		EColor getPixel(EFloat u, EFloat v);
 	};
 
 	typedef std::map<EString, EMaterial*>::iterator MaterialIter;
