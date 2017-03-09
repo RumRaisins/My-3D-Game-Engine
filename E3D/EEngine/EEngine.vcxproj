@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{78A46638-BECD-4B16-BCED-2BE6B031B55A}</ProjectGuid>
-    <RootNamespace>ECore</RootNamespace>
+    <ProjectGuid>{42CAE9A9-CCD3-4BBE-AB1B-CC5D21508E6A}</ProjectGuid>
+    <RootNamespace>EEngine</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
@@ -68,9 +68,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <TargetExt>.lib</TargetExt>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <TargetExt>.lib</TargetExt>
   </PropertyGroup>
@@ -79,7 +76,6 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -96,12 +92,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Z:\My-3D-Game-Engine\E3D\ECore;..\ECore\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <Lib>
+      <AdditionalDependencies>ECore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -117,27 +116,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="E3DHeader.h" />
-    <ClInclude Include="ECommon.h" />
-    <ClInclude Include="ECore.h" />
-    <ClInclude Include="EFrustum.h" />
-    <ClInclude Include="EGraphics.h" />
-    <ClInclude Include="ELight.h" />
-    <ClInclude Include="EMaterial.h" />
-    <ClInclude Include="EMath.h" />
-    <ClInclude Include="EMatrix.h" />
-    <ClInclude Include="EUtil.h" />
-    <ClInclude Include="EVector.h" />
+    <ProjectReference Include="..\ECore\ECore.vcxproj">
+      <Project>{78a46638-becd-4b16-bced-2be6b031b55a}</Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ECore.cpp" />
-    <ClCompile Include="EFrustum.cpp" />
-    <ClCompile Include="EGraphics.cpp" />
-    <ClCompile Include="ELight.cpp" />
-    <ClCompile Include="EMaterial.cpp" />
-    <ClCompile Include="EMath.cpp" />
-    <ClCompile Include="EMatrix.cpp" />
-    <ClCompile Include="EUtil.cpp" />
+    <ClInclude Include="ECamera.h" />
+    <ClInclude Include="EInputListener.h" />
+    <ClInclude Include="EMeshUntil.cpp" />
+    <ClInclude Include="EMeshUtil.h" />
+    <ClInclude Include="EObject.h" />
+    <ClInclude Include="EOgreMeshInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ECamera.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

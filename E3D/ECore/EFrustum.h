@@ -19,10 +19,10 @@ namespace E3D {
 		EVector4D       direction;     //摄像机注视的方向--朝向
 
 		//UVN模型使用，用于定义UVN摄像机
-		EVector4D       camUp;		   //UVN摄像机的模型的朝向上向量
-		EVector4D       camRight;      //UVN摄像机的模型的朝向右向量
-		EVector4D       camLook;	   //UVN摄像机的模型的朝向注视方向
-		EVector4D       camTarget;     //UVN摄像机的模型的注视点
+		EVector4D       camUp;		   //UVN摄像机的模型的朝向上向量  摄像机的Y轴
+		EVector4D       camRight;      //UVN摄像机的模型的朝向右向量  摄像机的X轴
+		EVector4D       camLook;	   //UVN摄像机的模型的朝向注视方向 摄像机的Z轴
+		EVector4D       camTarget;     //UVN摄像机的模型的注视点   Z轴的指向
 
 		EFloat          view_dist;     //视点到投影面的距离
 
