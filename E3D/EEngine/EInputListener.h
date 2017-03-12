@@ -6,7 +6,7 @@ namespace E3D {
 	class EInputListener {
 		public:
 			virtual EBool KeyPress(EInt key) = 0;
-			virtual EBool KeyRlease(EInt key) = 0;
+			virtual EBool KeyRelease(EInt key) = 0;
 
 			virtual EBool mouseButtonDown(EInt mouseButton) = 0;
 			virtual EBool mouseButtonRelease(EInt mouseButton) = 0;

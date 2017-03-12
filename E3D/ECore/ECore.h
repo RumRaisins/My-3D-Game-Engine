@@ -172,9 +172,11 @@ namespace E3D {
 	void Inert_Object4D_To_RenderList4D(ERenderList4D *renderList, EObject4D *OBJ, OBJ_TRANSFORM_TYPE transformType = TRANSFORM_LOCAL_TO_TRANS,
 		bool transformScaleAndPosition = false);
 	//局部坐标定编列表变换至世界坐标，这里直接使用加法，而没有使用与矩阵相乘的方法，因为没必要
-	void Local_To_World_Object4D(EObject4D *obj, OBJ_TRANSFORM_TYPE transformType = TRANSFORM_LOCAL_TO_TRANS);
-	//局部坐标定编列表变换至世界坐标，这里直接使用加法，而没有使用与矩阵相乘的方法，因为没必要
-	void Local_To_World_RenderList4D(ERenderList4D *rendList, const EVector4D &pos, OBJ_TRANSFORM_TYPE transformType = TRANSFORM_LOCAL_TO_TRANS);
+	void Local_To_World_RenderList4D(ERenderList4D *renderList,
+		const EVector4D &pos,
+		OBJ_TRANSFORM_TYPE transformType = TRANSFORM_LOCAL_TO_TRANS);
+
+	
 	//对物体进行剔除
 	bool Cull_Object4D(EObject4D *object, EFrustum *camera, CULL_TYPE cullType = CULL_SPHERE);
 	//消除背面，背面的消除算法的摄像机视点是基于世界坐标的，所以需要在定点变换成摄像机坐标前进行背面消除

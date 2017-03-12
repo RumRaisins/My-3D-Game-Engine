@@ -12,8 +12,7 @@ namespace E3D {
 
 	class ECamera {
 	public:
-		ECamera();
-
+		~ECamera();
 		void update();
 
 		//ÉèÖÃ½ü²Ã¼ôÃæ¾àÀë
@@ -43,7 +42,7 @@ namespace E3D {
 
 		EFrustum *getFrustumm() const { return mFrustum; }
 	private:
-		friend class EScenceManager;
+		friend class ESceneManager;
 		ECamera();
 		EFrustum *mFrustum;
 

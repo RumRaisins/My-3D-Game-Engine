@@ -245,38 +245,53 @@ namespace E3D {
 			}
 		}
 	}
-	void Local_To_World_RenderList4D(ERenderList4D *renderList, const EVector4D &pos, OBJ_TRANSFORM_TYPE transformType) {
+	void Local_To_World_RenderList4D(ERenderList4D *renderList,
+		const EVector4D &pos, OBJ_TRANSFORM_TYPE transformType)
+	{
 		EPolyonF4D *poly = NULL;
-		switch (transformType) {
-		case TRANSFORM_LOCAL: {
-			for (ERenderList4D::Itr itr = renderList->polyData.begin(); itr != renderList->polyData.end(); ++itr)
+		switch (transformType)
+		{
+		case TRANSFORM_LOCAL:
+		{
+			for (ERenderList4D::Itr itr = renderList->polyData.begin();
+				itr != renderList->polyData.end(); ++itr)
 			{
 				poly = &(*itr);
+
 				GetVertex4DAddVector4D(poly->localList[0], pos, poly->localList[0]);
 				GetVertex4DAddVector4D(poly->localList[1], pos, poly->localList[1]);
 				GetVertex4DAddVector4D(poly->localList[2], pos, poly->localList[2]);
 			}
-		} break;
-		case TRANSFORM_TRANS: {
-			for (ERenderList4D::Itr itr = renderList->polyData.begin(); itr != renderList->polyData.end(); ++itr)
+		}
+		break;
+		case TRANSFORM_LOCAL_TO_TRANS:
+		{
+			for (ERenderList4D::Itr itr = renderList->polyData.begin();
+				itr != renderList->polyData.end(); ++itr)
+			{
+				poly = &(*itr);
+				GetVertex4DAddVector4D(poly->localList[0], pos, poly->transformList[0]);
+				GetVertex4DAddVector4D(poly->localList[1], pos, poly->transformList[1]);
+				GetVertex4DAddVector4D(poly->localList[2], pos, poly->transformList[2]);
+			}
+		}
+		break;
+		case TRANSFORM_TRANS:
+		{
+			for (ERenderList4D::Itr itr = renderList->polyData.begin();
+				itr != renderList->polyData.end(); ++itr)
 			{
 				poly = &(*itr);
 				GetVertex4DAddVector4D(poly->transformList[0], pos, poly->transformList[0]);
 				GetVertex4DAddVector4D(poly->transformList[1], pos, poly->transformList[1]);
 				GetVertex4DAddVector4D(poly->transformList[2], pos, poly->transformList[2]);
 			}
-		}break;
-		case TRANSFORM_LOCAL_TO_TRANS: {
-			for (ERenderList4D::Itr itr = renderList->polyData.begin(); itr != renderList->polyData.end(); ++itr)
-			{
-				poly = &(*itr);
-				GetVertex4DAddVector4D(poly->localList[0], pos, poly->transformList[0]);
-				GetVertex4DAddVector4D(poly->localList[1], pos, poly->transformList[0]);
-				GetVertex4DAddVector4D(poly->localList[2], pos, poly->transformList[0]);
-			}
-		}break;
+		}
+		break;
 		}
 	}
+	
+
 
 	bool Cull_Object4D(EObject4D *object, EFrustum *camera, CULL_TYPE cullType) {
 		if (!object)

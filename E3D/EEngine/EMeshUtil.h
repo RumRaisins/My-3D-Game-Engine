@@ -32,7 +32,7 @@ namespace E3D {
 	}
 	//这个函数加载一个Ogre.Mesh格式的二进制文件，函数实现了对Ogre.Mesh文件静态模型的正确读取
 	//可以获取模型的顶点索引和顶点数据等模型数据，并返回EObject对象，如多模型有多个SubMesh，则可以通过EObject.nextObject来获取下一个submesh的指针
-	EObject4D* LoadOgreMesh(const EString meshName, const EVector4D &worldPos = EVector4D::ZERO, const EVector4D &scale = EVector4D(1, 1, 1));
+	EObject4D*  LoadOgreMesh(const EString &meshName, const EVector4D &worldPos = EVector4D::ZERO, const EVector4D &scale = EVector4D(1, 1, 1));
 
 	//.X模型结构
 	//xof 0302txt 0063

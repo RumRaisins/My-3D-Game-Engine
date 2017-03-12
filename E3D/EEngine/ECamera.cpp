@@ -7,7 +7,7 @@ namespace E3D {
 			, 1000, 75, SCREEN_WIDTH, SCREEN_HEIGHT);
 		update();
 	}
-	ECamera::ECamera() { SafeDelete(mFrustum); }
+	ECamera::~ECamera() { SafeDelete(mFrustum); }
 
 	void ECamera::update() {
 		if (mNeedUpdate) {
@@ -91,7 +91,7 @@ namespace E3D {
 	}
 
 	//ÈÆxÖáÐý×ª
-	void ECamera::yaw(EFloat pDegree) {
+	void ECamera::pitch(EFloat pDegree) {
 		EMatrix44 rotMat;
 		EVector4D distence = mFrustum->camTarget - mFrustum->position;
 		GetRotateMatrix44(rotMat, mFrustum->camRight, pDegree);
