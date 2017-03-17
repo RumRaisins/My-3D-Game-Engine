@@ -64,7 +64,7 @@ namespace E3D {
 		//更新Tank
 		virtual void update();
 		//获取摄像机应该移动的向量
-		EVector3D getCameraSrep()const { return mMoveVec; }
+		EVector3D getCameraStep()const { return mMoveVec; }
 
 
 	protected:
