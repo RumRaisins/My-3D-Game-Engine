@@ -2,6 +2,7 @@
 #include"ECanvas.h"
 #include"EInputListener.h"
 
+
 namespace E3D {
 
 	//游戏实体类，EGame 相当于一个关卡，有接受输入控制和绘制的功能
@@ -33,7 +34,7 @@ namespace E3D {
 		EBool showHelp;
 		class ECamera *camera;
 		class EMesh *plane;
-		class ESceneMananager *scene;
+		class ESceneManager *scene;
 		class EPlayerController *player;
 		class EGameManager     *gameMgr;
 

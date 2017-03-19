@@ -42,7 +42,7 @@ namespace E3D {
 				mCamera->setRenderMode(RENDER_WIRE);
 		}
 		else if (key == 'G')
-			mTank->setBulletType(mTank->getBulletType == BULLET_ROCKET ? BULLET_BALL : BULLET_ROCKET);
+			mTank->setBulletType(mTank->getBulletType() == BULLET_ROCKET ? BULLET_BALL : BULLET_ROCKET);
 	}
 	void EPlayerController::keyRelease(EInt key) {
 		if (key == 'W')
