@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="E3D::EAITank" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAwAABAAAQAAEAAA=</HashCode>
+      <FileName>include\EAITank.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="E3D::EBullet" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQMAgAAQAAACAAABAAAAACAAAAAIACKgACAACEAAA=</HashCode>
+      <FileName>include\EBullet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="E3D::EGame" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAIgAAEgkAAAQAAAAABAIQAAAAAgoABAAEEAAAFAAA=</HashCode>
+      <FileName>include\EGame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="E3D::EGameManager" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cAAAEAAQgAAAAAABwCAACAAABCA5iAFBABFIACAGEAE=</HashCode>
+      <FileName>include\EGameManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="E3D::EPlayerController" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIJIAAEAAAAAQAAAAAAAAACAAAAgIQAAAEEACAEAEA=</HashCode>
+      <FileName>include\EPlayerController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="E3D::ETank" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIQIJoBAQAAACCAARQAAAACRAAEBAEALABCwGIFAAA=</HashCode>
+      <FileName>include\ETank.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="E3D::SOUND_YYPE" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>include\EGameManager.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E3D::DIRECTION" Collapsed="true">
+    <Position X="4.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAChAAAAA=</HashCode>
+      <FileName>include\EPlayerController.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E3D::BulletType" Collapsed="true">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ETank.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E3D::TankType" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ETank.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

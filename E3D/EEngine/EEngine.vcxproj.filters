@@ -1,63 +1,68 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
+    <Filter Include="src">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="头文件">
+    <Filter Include="include">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ECamera.h">
-      <Filter>头文件</Filter>
+    <ClCompile Include="src\ECamera.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EMesh.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EMeshUtil.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EParticle.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ESceneManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EWindow.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ECamera.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="EInputListener.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="include\ECanvas.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="EOgreMeshInfo.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="include\EInputListener.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="EMeshUtil.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="include\EMesh.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="EMeshUntil.cpp">
-      <Filter>源文件</Filter>
+    <ClInclude Include="include\EMeshUtil.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="EObejct.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="include\EObject.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="EMesh.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="include\EOgreMeshInfo.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="ESceneManager.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="include\EParticle.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="EWindow.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="include\ESceneManager.h">
+      <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="ECanvas.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="include\EWindow.h">
+      <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ECamera.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="EMesh.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="ESceneManager.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="EWindow.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
+    <None Include="EEngine.cd" />
   </ItemGroup>
 </Project>

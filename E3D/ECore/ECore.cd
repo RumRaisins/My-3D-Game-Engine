@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="E3D::EBitmap" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAACAUAwAAAAAAMAAAkQEIAAAAEAAAAAQQ=</HashCode>
+      <FileName>include\EGraphics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="E3D::EGraphics" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAEAAAAIAIAAAEGAAAAAAAAAKAQAAABAYgEAQAcQQ=</HashCode>
+      <FileName>include\EGraphics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="E3D::EColor" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAoAQgBAgAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::EVertex4D" Collapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAEYAUAAQAAAAAAAAAAABpgAQAAAAA=</HashCode>
+      <FileName>include\ECore.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::EPlane3D" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACACAAAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECore.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::EPolyon4D" Collapsed="true">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAgAAAAAgAAAAAACEAAAAAEAAAAA=</HashCode>
+      <FileName>include\ECore.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::EPolyonF4D" Collapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAQAAQCAAAACEAAAAAABAAAA=</HashCode>
+      <FileName>include\ECore.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::CompEPolyonF4D" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECore.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::EObject4D" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAiAAAAAIAAAIgAAAAAyQCAEQgEEAAAAAAwAIAA=</HashCode>
+      <FileName>include\ECore.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::ERenderList4D" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAECAAAAAAAAAA=</HashCode>
+      <FileName>include\ECore.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::EFrustum" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAQAgAAAgII0BAggiIAAAABAAAAAEwAgAAAAABkA=</HashCode>
+      <FileName>include\EFrustum.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::ELight" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QABQAAAAEBABIAQAEAAAIAJAAAEAAAAAAQAAAKBAAgA=</HashCode>
+      <FileName>include\ELight.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::EMaterial" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAIAAAAAAAAAAAAAgIIAAAEAAAAAAAAAABgAQA=</HashCode>
+      <FileName>include\EMaterial.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::EMatrix44" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAYAEAAQAAAAAAQAAAigAAAABAAgA=</HashCode>
+      <FileName>include\EMatrix.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::EVector2D" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAQAAAAYEEAJQAAAAAAAABAAABgAAAEAwA=</HashCode>
+      <FileName>include\EVector.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::EVector3D" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAQAAAAYEEAIQAAAAAAAABAQABgAQAMAwA=</HashCode>
+      <FileName>include\EVector.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="E3D::EVector4D" Collapsed="true">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAQAAEAYEEAIQAAAAAAAABAQAhgAQAEAwA=</HashCode>
+      <FileName>include\EVector.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="E3D::EChar" Collapsed="true">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EShort" Collapsed="true">
+    <Position X="4" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EFloat" Collapsed="true">
+    <Position X="5.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EInt" Collapsed="true">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EBool" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::ELong" Collapsed="true">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EDouble" Collapsed="true">
+    <Position X="4" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EString" Collapsed="true">
+    <Position X="5.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EWSring" Collapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EUChar" Collapsed="true">
+    <Position X="7.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EUShort" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EUInt" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECommon.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EVertex4DArray" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECore.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EVector4DArray" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECore.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::EPolyon4DArray" Collapsed="true">
+    <Position X="2.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ECore.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::LightItr" Collapsed="true">
+    <Position X="0.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ELight.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="E3D::MaterialIter" Collapsed="true">
+    <Position X="2.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\EMaterial.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="E3D::CULL_TYPE" Collapsed="true">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAABAAAA=</HashCode>
+      <FileName>include\ECore.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E3D::OBJ_TRANSFORM_TYPE" Collapsed="true">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAABAAAAAQAAAAAAAA=</HashCode>
+      <FileName>include\ECore.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E3D::CAMERA_TYPE" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>include\EFrustum.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="E3D::LIGHT_TYPE" Collapsed="true">
+    <Position X="4" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAABAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\ELight.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
